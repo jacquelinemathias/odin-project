@@ -1,0 +1,148 @@
+<!-- Digitar "!" e selecionar a opção com apenas um ponto de exclamação vai chamar a base do HTML (Linhas 3 a 13) -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- O comando ".wrapper>h1{Title}+.content" expande o conteúdo ao redor do elemento selecionado <p> -->
+
+<div id="page">
+    <p>Abreviação</p>
+</div>
+
+<!-- Com o comando: -->
+
+<div id="page">
+    <div class="wrapper">
+        <h1>Title</h1>
+        <div class="content">
+            <p>Abreviação</p>
+        </div>
+    </div>
+</div>
+
+<!-- Para aplicar Wrap em linhas específicas e torná-las uma lista, aplica-se o comando "nav>ul.nav>li.nav-item$*>a"  -->
+
+<div id="page">
+    Elementos
+    Que eu quero
+    Colocar
+    Em uma
+    lista
+    Com Wrap
+</div>
+
+<!-- Com o comando: -->
+
+<div id="page">
+    <nav>
+        <ul class="nav">
+            <li class="nav-item1">
+                <a href="|">Elementos</a>
+            </li>
+            <li class="nav-item2">
+                <a href="|">Que eu quero</a>
+            </li>
+            <li class="nav-item3">
+                <a href="|">Colocar</a>
+            </li>
+            <li class="nav-item4">
+                <a href="|">Em uma</a>
+            </li>
+            <li class="nav-item5">
+                <a href="|">lista</a>
+            </li>
+            <li class="nav-item6">
+                <a href="|">Com Wrap</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Elementos numerados podem ter os números removidos com o comando "ul.nav>li.nav-item$*>a|t", que é igual ao comando utilizado para criar listas, mas com a adição de "|t" no final -->
+
+<div id="page">
+    1. Elementos
+    2. Que eu quero
+    3. Colocar
+    4. Em uma
+    5. lista
+    6. Com Wrap
+</div>
+
+<!-- Com o comando: -->
+
+<div id="page">
+    <ul class="nav">
+        <li class="nav-item1">
+            <a href="">Elementos</a>
+        </li>
+        <li class="nav-item2">
+            <a href="">Que eu quero</a>
+        </li>
+        <li class="nav-item3">
+            <a href="">Colocar</a>
+        </li>
+        <li class="nav-item4">
+            <a href="">Em uma</a>
+        </li>
+        <li class="nav-item5">
+            <a href="">lista</a>
+        </li>
+        <li class="nav-item6">
+            <a href="">Com Wrap</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Por padrão, as abreviações Emmet colocam o conteúdo original (antes do wrap) na última posição entre os elementos do código após a formatação. Para alterar a posição dos elementos manualmente, utiliza-se o comando "ul>li[title=$#]*>{$#}+img[alt=$#]" -->
+
+<div id="page">
+    Elementos
+    Que eu quero
+    Colocar
+    Em uma
+    lista
+    Com Wrap
+</div>
+
+<!-- Com o comando: -->
+
+<div id="page">
+    <ul>
+        <li title="Elementos">
+            Elementos
+            <img src="" alt="Elementos">
+        </li>
+        <li title="Que eu quero">
+            Que eu quero
+            <img src="" alt="Que eu quero">
+        </li>
+        <li title="Colocar">
+            Colocar
+            <img src="" alt="Colocar">
+        </li>
+        <li title="Em uma">
+            Em uma
+            <img src="" alt="Em uma">
+        </li>
+        <li title="lista">
+            lista
+            <img src="" alt="lista">
+        </li>
+        <li title="Com Wrap">
+            Com Wrap
+            <img src="" alt="Com Wrap">
+        </li>
+    </ul>
+</div>
+
+<!-- O comando Remove Tag remove a tag de algum elemento da página e ajusta a indentação (Ctrl+K) -->
